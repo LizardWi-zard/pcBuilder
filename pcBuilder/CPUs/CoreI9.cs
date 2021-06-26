@@ -1,4 +1,4 @@
-﻿namespace Task.CPUs
+﻿namespace pcBuilder.CPUs
 {
     class CoreI9
     {
