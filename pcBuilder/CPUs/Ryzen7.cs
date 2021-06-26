@@ -1,13 +1,13 @@
 ﻿namespace pcBuilder.CPUs
 {
-    class Ryzen7
+    class Ryzen7 : IProccesor
     {
-        public const int Frequency = 4200;
+        int IProccesor.Frequency { get => 4200; }
 
-        public const int CoreCount = 12;
+        int IProccesor.CoreCount { get => 12; }
 
-        public const int TDP = 65;
+        int IProccesor.TDP { get => 65; }
 
-        public const Sockets Socket = Sockets.AmdAM4;
+        Sockets IProccesor.Socket { get => Sockets.AmdAM4; }
     }
 }

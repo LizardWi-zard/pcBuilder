@@ -1,13 +1,13 @@
 ﻿namespace pcBuilder.CPUs
 {
-    class CoreI3
+    class CoreI3 : IProccesor
     {
-        public const int Frequency = 3200;
+        int IProccesor.Frequency { get => 3200; }
 
-        public const int CoreCount = 4;
+        int IProccesor.CoreCount { get => 4; }
 
-        public const int TDP = 95;
+        int IProccesor.TDP { get => 95; }
 
-        public const Sockets Socket = Sockets.Intel1212;
+        Sockets IProccesor.Socket { get => Sockets.Intel1212; }
     }
 }

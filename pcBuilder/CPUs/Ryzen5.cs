@@ -1,13 +1,13 @@
 ﻿namespace pcBuilder.CPUs
 {
-    class Ryzen5
+    class Ryzen5 : IProccesor
     {
-        public const int Frequency = 4000;
+        int IProccesor.Frequency { get => 4000; }
 
-        public const int CoreCount = 8;
+        int IProccesor.CoreCount { get => 8; }
 
-        public const int TDP = 65;
+        int IProccesor.TDP { get => 65; }
 
-        public const Sockets Socket = Sockets.AmdAM4;
+        Sockets IProccesor.Socket { get => Sockets.AmdAM4; }
     }
 }

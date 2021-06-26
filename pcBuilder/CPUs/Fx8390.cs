@@ -1,13 +1,13 @@
 ﻿namespace pcBuilder.CPUs
 {
-    class Fx8390
+    class Fx8390 : IProccesor
     {
-        public const int Frequency = 4200;
+        int IProccesor.Frequency { get => 4200; }
 
-        public const int CoreCount = 8;
+        int IProccesor.CoreCount { get => 8; }
 
-        public const int TDP = 95;
+        int IProccesor.TDP { get => 95; }
 
-        public const Sockets Socket = Sockets.AmdAM3;
+        Sockets IProccesor.Socket { get => Sockets.AmdAM3; }
     }
 }

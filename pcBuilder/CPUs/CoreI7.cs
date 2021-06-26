@@ -1,13 +1,13 @@
 ﻿namespace pcBuilder.CPUs
 {
-    class CoreI7
+    class CoreI7 : IProccesor
     {
-        public const int Frequency = 3800;
+        int IProccesor.Frequency { get => 3800; }
 
-        public const int CoreCount = 8;
+        int IProccesor.CoreCount { get => 8; }
 
-        public const int TDP = 95;
+        int IProccesor.TDP { get => 95; }
 
-        public const Sockets Socket = Sockets.Intel1234;
+        Sockets IProccesor.Socket { get => Sockets.Intel1234; }
     }
 }
