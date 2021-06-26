@@ -8,7 +8,22 @@ namespace pcBuilder.Motherboards
     {
         public override Sockets Socket { get; }
 
-        private MotherboardIntel1234()
+        private IProccesor _CPU;
+
+        public override IProccesor CPU
+        {
+            get { return _CPU; }
+
+            set
+            {
+                if (value.Socket != Socket)
+                    throw new InvalidOperationException();
+                else
+                    _CPU = value;
+            }
+        }
+
+        public MotherboardIntel1234()
         {
             Socket = Sockets.Intel1234;
         }

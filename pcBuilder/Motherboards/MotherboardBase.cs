@@ -4,7 +4,7 @@
     {
         public abstract Sockets Socket { get; }
 
-        public IProccesor CPU { get;  } 
+        public virtual IProccesor CPU { get; set; } 
 
         public MotherboardBase()
         {
