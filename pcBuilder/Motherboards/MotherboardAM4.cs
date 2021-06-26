@@ -4,7 +4,7 @@ using System.Text;
 
 namespace pcBuilder.Motherboards
 {
-    class MotherboardAM4 : MotherboardBase
+    public class MotherboardAM4 : MotherboardBase
     {
         public override Sockets Socket { get; }
 

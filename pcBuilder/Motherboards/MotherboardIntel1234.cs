@@ -4,7 +4,7 @@ using System.Text;
 
 namespace pcBuilder.Motherboards
 {
-    class MotherboardIntel1234 : MotherboardBase
+    public class MotherboardIntel1234 : MotherboardBase
     {
         public override Sockets Socket { get; }
 

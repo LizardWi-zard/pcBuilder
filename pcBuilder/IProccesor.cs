@@ -4,8 +4,9 @@ using System.Text;
 
 namespace pcBuilder
 {
-    interface IProccesor
+    public interface IProccesor
     {
+        //public
         int Frequency { get; }
         int CoreCount { get; }
         int TDP { get; }

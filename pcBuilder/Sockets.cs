@@ -1,6 +1,6 @@
 ﻿namespace pcBuilder
 {
-    enum Sockets
+    public enum Sockets
     {
         AmdAM3,
         AmdAM4,

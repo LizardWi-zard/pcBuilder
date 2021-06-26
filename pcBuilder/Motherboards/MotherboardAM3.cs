@@ -5,7 +5,7 @@ using pcBuilder;
 
 namespace pcBuilder.Motherboards
 {
-    class  MotherboardAM3 : MotherboardBase
+    public class  MotherboardAM3 : MotherboardBase
     {
         public override Sockets Socket { get; }
 
