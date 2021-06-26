@@ -1,4 +1,4 @@
-﻿namespace Task.Motherboards
+﻿namespace pcBuilder.Motherboards
 {
     abstract class MotherboardBase
     {
