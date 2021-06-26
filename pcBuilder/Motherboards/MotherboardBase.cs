@@ -2,6 +2,6 @@
 {
     abstract class MotherboardBase
     {
-        public Sockets Socket { get; }
+        public abstract Sockets Socket { get; }
     }
 }
