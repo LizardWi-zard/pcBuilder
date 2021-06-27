@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace pcBuilder.CPUs
+namespace pcBuilder
 {
     enum Processors
     {
