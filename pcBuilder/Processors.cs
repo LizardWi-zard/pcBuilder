@@ -4,7 +4,7 @@ using System.Text;
 
 namespace pcBuilder
 {
-    enum Processors
+    public enum Processors
     {
         CoreI3,
         CoreI5,

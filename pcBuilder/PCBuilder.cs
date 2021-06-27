@@ -1,17 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using pcBuilder.Motherboards;
 
 namespace pcBuilder.CPUs
 {
-    class PCBuilder
+    public class PCBuilder
     {
         PCBuilder()
         {
 
         }
 
-        private IProccesor CreateCPU(Processors cpu)
+        public MotherboardBase Build(Processors cpu)
+        {
+            switch (CreateCPU(cpu).Socket)
+            {
+                case Sockets.AmdAM3:
+                    return new MotherboardAM3() { CPU = CreateCPU(cpu) } ;
+                case Sockets.AmdAM4:
+                    return new MotherboardAM4() { CPU = CreateCPU(cpu) };
+                case Sockets.Intel1234:
+                    return new MotherboardIntel1234() { CPU = CreateCPU(cpu) };
+                case Sockets.Intel1212:
+                    return new MotherboardIntel1212() { CPU = CreateCPU(cpu) };
+                default: 
+                    throw new KeyNotFoundException();
+            }
+        }
+
+        internal IProccesor CreateCPU(Processors cpu)
         {
             switch (cpu)
             {
@@ -39,6 +57,5 @@ namespace pcBuilder.CPUs
                     throw new KeyNotFoundException();
             }
         }
-
     }
 }

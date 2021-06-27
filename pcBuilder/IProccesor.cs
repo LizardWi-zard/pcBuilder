@@ -6,7 +6,6 @@ namespace pcBuilder
 {
     public interface IProccesor
     {
-        //public
         int Frequency { get; }
         int CoreCount { get; }
         int TDP { get; }
