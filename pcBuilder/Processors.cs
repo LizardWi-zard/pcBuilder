@@ -15,6 +15,6 @@ namespace pcBuilder
         Ryzen7,
         Ryzen9,
         Fx8350,
-        Fx8590
+        Fx8390
     }
 }
