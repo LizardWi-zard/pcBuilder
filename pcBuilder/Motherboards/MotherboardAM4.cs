@@ -11,6 +11,7 @@ namespace pcBuilder.Motherboards
         public MotherboardAM4()
         {
             Socket = Sockets.AmdAM4;
+            RamType = RamType.DDR4;
         }
     }
 }

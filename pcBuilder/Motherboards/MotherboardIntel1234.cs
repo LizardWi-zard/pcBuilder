@@ -11,6 +11,7 @@ namespace pcBuilder.Motherboards
         public MotherboardIntel1234()
         {
             Socket = Sockets.Intel1234;
+            RamType = RamType.DDR4;
         }
     }
 }

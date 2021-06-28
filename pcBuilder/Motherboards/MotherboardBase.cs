@@ -6,6 +6,8 @@ namespace pcBuilder.Motherboards
     {
         public abstract Sockets Socket { get; }
 
+        public RamType RamType { get; protected set; }
+
         private IProccesor _CPU;
 
         public virtual IProccesor CPU 

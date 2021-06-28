@@ -12,6 +12,7 @@ namespace pcBuilder.Motherboards
         public MotherboardAM3()
         {
             Socket = Sockets.AmdAM3;
+            RamType = RamType.DDR3;
         }
     }
 }
