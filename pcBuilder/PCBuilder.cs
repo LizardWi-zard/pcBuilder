@@ -14,16 +14,18 @@ namespace pcBuilder.CPUs
 
         public MotherboardBase Build(Processors cpu)
         {
-            switch (CreateCPU(cpu).Socket)
+            var _cpu = CreateCPU(cpu);
+
+            switch (_cpu.Socket)
             {
                 case Sockets.AmdAM3:
-                    return new MotherboardAM3() { CPU = CreateCPU(cpu) } ;
+                    return new MotherboardAM3() { CPU = _cpu } ;
                 case Sockets.AmdAM4:
-                    return new MotherboardAM4() { CPU = CreateCPU(cpu) };
+                    return new MotherboardAM4() { CPU = _cpu };
                 case Sockets.Intel1234:
-                    return new MotherboardIntel1234() { CPU = CreateCPU(cpu) };
+                    return new MotherboardIntel1234() { CPU = _cpu };
                 case Sockets.Intel1212:
-                    return new MotherboardIntel1212() { CPU = CreateCPU(cpu) };
+                    return new MotherboardIntel1212() { CPU = _cpu };
                 default: 
                     throw new KeyNotFoundException();
             }
